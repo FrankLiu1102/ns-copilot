@@ -1,0 +1,247 @@
+{
+  "generated_at": "2026-02-05T02:20:58.149585",
+  "total_concepts": 41,
+  "active_concepts": 26,
+  "total_papers": 149,
+  "by_type": {
+    "BrainRegion": {
+      "concept_count": 8,
+      "paper_mentions": 61
+    },
+    "CognitiveFunction": {
+      "concept_count": 8,
+      "paper_mentions": 135
+    },
+    "Disease": {
+      "concept_count": 2,
+      "paper_mentions": 99
+    },
+    "Method": {
+      "concept_count": 6,
+      "paper_mentions": 14
+    },
+    "Molecule": {
+      "concept_count": 3,
+      "paper_mentions": 79
+    },
+    "Neurotransmitter": {
+      "concept_count": 5,
+      "paper_mentions": 22
+    },
+    "Other": {
+      "concept_count": 3,
+      "paper_mentions": 54
+    },
+    "Process": {
+      "concept_count": 6,
+      "paper_mentions": 23
+    }
+  },
+  "concept_frequencies": {
+    "alzheimer": {
+      "type": "Disease",
+      "frequency": 50,
+      "display_name": "Alzheimer"
+    },
+    "working_memory": {
+      "type": "CognitiveFunction",
+      "frequency": 50,
+      "display_name": "Working Memory"
+    },
+    "parkinson": {
+      "type": "Disease",
+      "frequency": 49,
+      "display_name": "Parkinson"
+    },
+    "amyloid_beta": {
+      "type": "Molecule",
+      "frequency": 38,
+      "display_name": "Amyloid Beta"
+    },
+    "cognitive_decline": {
+      "type": "CognitiveFunction",
+      "frequency": 38,
+      "display_name": "Cognitive Decline"
+    },
+    "tau": {
+      "type": "Molecule",
+      "frequency": 36,
+      "display_name": "Tau"
+    },
+    "biomarkers": {
+      "type": "Other",
+      "frequency": 33,
+      "display_name": "Biomarkers"
+    },
+    "prefrontal_cortex": {
+      "type": "BrainRegion",
+      "frequency": 31,
+      "display_name": "Prefrontal Cortex"
+    },
+    "motor_function": {
+      "type": "CognitiveFunction",
+      "frequency": 28,
+      "display_name": "Motor Function"
+    },
+    "dopamine": {
+      "type": "Neurotransmitter",
+      "frequency": 22,
+      "display_name": "Dopamine"
+    },
+    "hippocampus": {
+      "type": "BrainRegion",
+      "frequency": 15,
+      "display_name": "Hippocampus"
+    },
+    "treatment": {
+      "type": "Other",
+      "frequency": 14,
+      "display_name": "Treatment"
+    },
+    "cognition": {
+      "type": "CognitiveFunction",
+      "frequency": 12,
+      "display_name": "Cognition"
+    },
+    "neurodegeneration": {
+      "type": "Process",
+      "frequency": 12,
+      "display_name": "Neurodegeneration"
+    },
+    "parietal_cortex": {
+      "type": "BrainRegion",
+      "frequency": 9,
+      "display_name": "Parietal Cortex"
+    },
+    "genetics": {
+      "type": "Other",
+      "frequency": 7,
+      "display_name": "Genetics"
+    },
+    "memory": {
+      "type": "CognitiveFunction",
+      "frequency": 7,
+      "display_name": "Memory"
+    },
+    "fmri": {
+      "type": "Method",
+      "frequency": 6,
+      "display_name": "fMRI"
+    },
+    "hippocampal_degeneration": {
+      "type": "Process",
+      "frequency": 6,
+      "display_name": "Hippocampal Degeneration"
+    },
+    "alpha_synuclein": {
+      "type": "Molecule",
+      "frequency": 5,
+      "display_name": "Alpha Synuclein"
+    },
+    "eeg": {
+      "type": "Method",
+      "frequency": 5,
+      "display_name": "EEG"
+    },
+    "protein_aggregation": {
+      "type": "Process",
+      "frequency": 5,
+      "display_name": "Protein Aggregation"
+    },
+    "basal_ganglia": {
+      "type": "BrainRegion",
+      "frequency": 4,
+      "display_name": "Basal Ganglia"
+    },
+    "deep_brain_stimulation": {
+      "type": "Method",
+      "frequency": 2,
+      "display_name": "Deep Brain Stimulation"
+    },
+    "substantia_nigra": {
+      "type": "BrainRegion",
+      "frequency": 2,
+      "display_name": "Substantia Nigra"
+    },
+    "electrophysiology": {
+      "type": "Method",
+      "frequency": 1,
+      "display_name": "Electrophysiology"
+    },
+    "acetylcholine": {
+      "type": "Neurotransmitter",
+      "frequency": 0,
+      "display_name": "Acetylcholine"
+    },
+    "amygdala": {
+      "type": "BrainRegion",
+      "frequency": 0,
+      "display_name": "Amygdala"
+    },
+    "attention": {
+      "type": "CognitiveFunction",
+      "frequency": 0,
+      "display_name": "Attention"
+    },
+    "decision_making": {
+      "type": "CognitiveFunction",
+      "frequency": 0,
+      "display_name": "Decision Making"
+    },
+    "executive_function": {
+      "type": "CognitiveFunction",
+      "frequency": 0,
+      "display_name": "Executive Function"
+    },
+    "gaba": {
+      "type": "Neurotransmitter",
+      "frequency": 0,
+      "display_name": "GABA"
+    },
+    "glutamate": {
+      "type": "Neurotransmitter",
+      "frequency": 0,
+      "display_name": "Glutamate"
+    },
+    "neural_oscillations": {
+      "type": "Process",
+      "frequency": 0,
+      "display_name": "Neural Oscillations"
+    },
+    "neuroinflammation": {
+      "type": "Process",
+      "frequency": 0,
+      "display_name": "Neuroinflammation"
+    },
+    "optogenetics": {
+      "type": "Method",
+      "frequency": 0,
+      "display_name": "Optogenetics"
+    },
+    "pet": {
+      "type": "Method",
+      "frequency": 0,
+      "display_name": "PET"
+    },
+    "serotonin": {
+      "type": "Neurotransmitter",
+      "frequency": 0,
+      "display_name": "Serotonin"
+    },
+    "synaptic_plasticity": {
+      "type": "Process",
+      "frequency": 0,
+      "display_name": "Synaptic Plasticity"
+    },
+    "temporal_cortex": {
+      "type": "BrainRegion",
+      "frequency": 0,
+      "display_name": "Temporal Cortex"
+    },
+    "thalamus": {
+      "type": "BrainRegion",
+      "frequency": 0,
+      "display_name": "Thalamus"
+    }
+  }
+}

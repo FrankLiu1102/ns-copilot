@@ -1,0 +1,211 @@
+{
+  "version": "1.0",
+  "description": "Neuroscience concept vocabulary with types and aliases",
+  "concepts": {
+    "prefrontal_cortex": {
+      "type": "BrainRegion",
+      "aliases": ["prefrontal cortex", "PFC", "prefrontal", "frontal cortex"],
+      "description": "Anterior part of the frontal lobe involved in executive functions"
+    },
+    "hippocampus": {
+      "type": "BrainRegion",
+      "aliases": ["hippocampus", "hippocampal", "HPC"],
+      "description": "Brain structure critical for memory formation and spatial navigation"
+    },
+    "basal_ganglia": {
+      "type": "BrainRegion",
+      "aliases": ["basal ganglia", "basal ganglia circuits", "striatum", "caudate", "putamen"],
+      "description": "Subcortical nuclei involved in motor control and learning"
+    },
+    "parietal_cortex": {
+      "type": "BrainRegion",
+      "aliases": ["parietal cortex", "parietal", "posterior parietal cortex", "PPC"],
+      "description": "Brain region involved in attention and spatial processing"
+    },
+    "substantia_nigra": {
+      "type": "BrainRegion",
+      "aliases": ["substantia nigra", "nigral", "nigral degeneration", "SN"],
+      "description": "Midbrain structure containing dopaminergic neurons"
+    },
+    "temporal_cortex": {
+      "type": "BrainRegion",
+      "aliases": ["temporal cortex", "temporal lobe", "medial temporal lobe", "MTL"],
+      "description": "Brain region involved in auditory processing and memory"
+    },
+    "amygdala": {
+      "type": "BrainRegion",
+      "aliases": ["amygdala", "amygdaloid"],
+      "description": "Brain structure involved in emotion processing"
+    },
+    "thalamus": {
+      "type": "BrainRegion",
+      "aliases": ["thalamus", "thalamic"],
+      "description": "Relay center for sensory and motor signals"
+    },
+    "dopamine": {
+      "type": "Neurotransmitter",
+      "aliases": ["dopamine", "dopaminergic", "dopaminergic system", "DA"],
+      "description": "Neurotransmitter involved in reward and motor control"
+    },
+    "acetylcholine": {
+      "type": "Neurotransmitter",
+      "aliases": ["acetylcholine", "cholinergic", "ACh"],
+      "description": "Neurotransmitter involved in memory and attention"
+    },
+    "glutamate": {
+      "type": "Neurotransmitter",
+      "aliases": ["glutamate", "glutamatergic"],
+      "description": "Primary excitatory neurotransmitter"
+    },
+    "gaba": {
+      "type": "Neurotransmitter",
+      "aliases": ["GABA", "GABAergic", "inhibitory"],
+      "description": "Primary inhibitory neurotransmitter"
+    },
+    "serotonin": {
+      "type": "Neurotransmitter",
+      "aliases": ["serotonin", "serotonergic", "5-HT"],
+      "description": "Neurotransmitter involved in mood regulation"
+    },
+    "working_memory": {
+      "type": "CognitiveFunction",
+      "aliases": ["working memory", "WM", "short-term memory", "WM capacity", "WM load", "WM maintenance", "WM encoding", "WM retrieval"],
+      "description": "Cognitive system for temporarily holding information"
+    },
+    "attention": {
+      "type": "CognitiveFunction",
+      "aliases": ["attention", "attentional", "selective attention", "sustained attention"],
+      "description": "Cognitive process of selectively focusing on stimuli"
+    },
+    "memory": {
+      "type": "CognitiveFunction",
+      "aliases": ["memory", "memory deficits", "memory formation", "memory consolidation"],
+      "description": "Cognitive process of encoding, storing, and retrieving information"
+    },
+    "executive_function": {
+      "type": "CognitiveFunction",
+      "aliases": ["executive function", "executive control", "cognitive control"],
+      "description": "Higher-order cognitive processes for goal-directed behavior"
+    },
+    "decision_making": {
+      "type": "CognitiveFunction",
+      "aliases": ["decision making", "decision-making", "choice"],
+      "description": "Cognitive process of selecting actions"
+    },
+    "motor_function": {
+      "type": "CognitiveFunction",
+      "aliases": ["motor function", "motor control", "movement", "motor"],
+      "description": "Control of voluntary movements"
+    },
+    "cognitive_decline": {
+      "type": "CognitiveFunction",
+      "aliases": ["cognitive decline", "cognitive impairment", "cognitive deficits"],
+      "description": "Deterioration of cognitive abilities"
+    },
+    "fmri": {
+      "type": "Method",
+      "aliases": ["fMRI", "functional MRI", "functional magnetic resonance imaging", "BOLD"],
+      "description": "Neuroimaging technique measuring brain activity"
+    },
+    "eeg": {
+      "type": "Method",
+      "aliases": ["EEG", "electroencephalography", "electrophysiology"],
+      "description": "Recording of electrical activity in the brain"
+    },
+    "electrophysiology": {
+      "type": "Method",
+      "aliases": ["electrophysiology", "single-unit recording", "neural recording", "spike recording"],
+      "description": "Recording of electrical signals from neurons"
+    },
+    "optogenetics": {
+      "type": "Method",
+      "aliases": ["optogenetics", "optogenetic"],
+      "description": "Technique using light to control neurons"
+    },
+    "deep_brain_stimulation": {
+      "type": "Method",
+      "aliases": ["deep brain stimulation", "DBS"],
+      "description": "Surgical treatment using electrical stimulation"
+    },
+    "pet": {
+      "type": "Method",
+      "aliases": ["PET", "positron emission tomography"],
+      "description": "Imaging technique using radioactive tracers"
+    },
+    "parkinson": {
+      "type": "Disease",
+      "aliases": ["parkinson", "Parkinson's disease", "PD", "parkinsonian"],
+      "description": "Neurodegenerative disorder affecting movement"
+    },
+    "alzheimer": {
+      "type": "Disease",
+      "aliases": ["alzheimer", "Alzheimer's disease", "AD"],
+      "description": "Neurodegenerative disorder affecting memory and cognition"
+    },
+    "amyloid_beta": {
+      "type": "Molecule",
+      "aliases": ["amyloid-beta", "amyloid", "Abeta", "amyloid-beta pathology", "amyloid plaques"],
+      "description": "Protein associated with Alzheimer's disease"
+    },
+    "tau": {
+      "type": "Molecule",
+      "aliases": ["tau", "tau protein", "tau pathology", "neurofibrillary tangles"],
+      "description": "Protein associated with neurodegeneration"
+    },
+    "alpha_synuclein": {
+      "type": "Molecule",
+      "aliases": ["alpha-synuclein", "alpha_synuclein", "a-synuclein", "Lewy bodies"],
+      "description": "Protein associated with Parkinson's disease"
+    },
+    "neurodegeneration": {
+      "type": "Process",
+      "aliases": ["neurodegeneration", "neuronal loss", "neuronal death", "degeneration"],
+      "description": "Progressive loss of neurons"
+    },
+    "neuroinflammation": {
+      "type": "Process",
+      "aliases": ["neuroinflammation", "inflammation", "microglial activation"],
+      "description": "Inflammatory response in the nervous system"
+    },
+    "synaptic_plasticity": {
+      "type": "Process",
+      "aliases": ["synaptic plasticity", "LTP", "LTD", "plasticity"],
+      "description": "Activity-dependent changes in synaptic strength"
+    },
+    "neural_oscillations": {
+      "type": "Process",
+      "aliases": ["neural oscillations", "oscillations", "theta", "gamma", "alpha", "beta"],
+      "description": "Rhythmic patterns of neural activity"
+    },
+    "biomarkers": {
+      "type": "Other",
+      "aliases": ["biomarkers", "diagnostic biomarkers", "biomarker"],
+      "description": "Measurable indicators of biological state"
+    },
+    "treatment": {
+      "type": "Other",
+      "aliases": ["treatment", "therapeutic interventions", "therapy", "dopamine replacement therapy"],
+      "description": "Medical interventions for disease"
+    },
+    "genetics": {
+      "type": "Other",
+      "aliases": ["genetics", "genetic", "genetic risk factors", "gene"],
+      "description": "Study of heredity and gene function"
+    },
+    "cognition": {
+      "type": "CognitiveFunction",
+      "aliases": ["cognition", "cognitive", "cognitive function", "cognitive abilities"],
+      "description": "Mental processes of acquiring knowledge and understanding"
+    },
+    "hippocampal_degeneration": {
+      "type": "Process",
+      "aliases": ["hippocampal degeneration", "hippocampal atrophy", "hippocampal damage"],
+      "description": "Progressive deterioration of hippocampal structure and function"
+    },
+    "protein_aggregation": {
+      "type": "Process",
+      "aliases": ["protein aggregation", "protein misfolding", "aggregation"],
+      "description": "Abnormal accumulation of misfolded proteins in neurons"
+    }
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "num_nodes": 41,
+  "num_edges": 50,
+  "density": 0.03048780487804878,
+  "is_connected": false,
+  "num_weakly_connected_components": 19,
+  "nodes_by_type": {
+    "Disease": 2,
+    "CognitiveFunction": 8,
+    "Molecule": 3,
+    "Other": 3,
+    "BrainRegion": 8,
+    "Neurotransmitter": 5,
+    "Process": 6,
+    "Method": 6
+  },
+  "edges_by_relation": {
+    "CAUSES": 6,
+    "MEASURED_BY": 6,
+    "CORRELATES_WITH": 4,
+    "SUPPORTS": 6,
+    "IMPAIRS": 6,
+    "ASSOCIATED_WITH": 14,
+    "MODULATES": 2,
+    "LOCATED_IN": 3,
+    "TREATS": 3
+  },
+  "top_nodes_by_in_degree": [
+    {
+      "node": "alzheimer",
+      "in_degree": 8
+    },
+    {
+      "node": "cognitive_decline",
+      "in_degree": 8
+    },
+    {
+      "node": "working_memory",
+      "in_degree": 5
+    },
+    {
+      "node": "hippocampal_degeneration",
+      "in_degree": 4
+    },
+    {
+      "node": "hippocampus",
+      "in_degree": 3
+    },
+    {
+      "node": "fmri",
+      "in_degree": 3
+    },
+    {
+      "node": "parkinson",
+      "in_degree": 2
+    },
+    {
+      "node": "tau",
+      "in_degree": 2
+    },
+    {
+      "node": "biomarkers",
+      "in_degree": 2
+    },
+    {
+      "node": "cognition",
+      "in_degree": 2
+    }
+  ],
+  "top_nodes_by_out_degree": [
+    {
+      "node": "amyloid_beta",
+      "out_degree": 6
+    },
+    {
+      "node": "tau",
+      "out_degree": 6
+    },
+    {
+      "node": "prefrontal_cortex",
+      "out_degree": 5
+    },
+    {
+      "node": "working_memory",
+      "out_degree": 3
+    },
+    {
+      "node": "parkinson",
+      "out_degree": 3
+    },
+    {
+      "node": "hippocampus",
+      "out_degree": 3
+    },
+    {
+      "node": "treatment",
+      "out_degree": 3
+    },
+    {
+      "node": "alpha_synuclein",
+      "out_degree": 3
+    },
+    {
+      "node": "alzheimer",
+      "out_degree": 2
+    },
+    {
+      "node": "cognitive_decline",
+      "out_degree": 2
+    }
+  ],
+  "isolated_nodes": [
+    "deep_brain_stimulation",
+    "substantia_nigra",
+    "electrophysiology",
+    "acetylcholine",
+    "amygdala",
+    "attention",
+    "decision_making",
+    "executive_function",
+    "gaba",
+    "glutamate",
+    "neural_oscillations",
+    "neuroinflammation",
+    "optogenetics",
+    "pet",
+    "serotonin",
+    "synaptic_plasticity",
+    "temporal_cortex",
+    "thalamus"
+  ],
+  "num_isolated_nodes": 18,
+  "strongest_edges": [
+    {
+      "source": "tau",
+      "target": "alzheimer",
+      "evidence_count": 20
+    },
+    {
+      "source": "amyloid_beta",
+      "target": "alzheimer",
+      "evidence_count": 16
+    },
+    {
+      "source": "prefrontal_cortex",
+      "target": "working_memory",
+      "evidence_count": 5
+    },
+    {
+      "source": "working_memory",
+      "target": "fmri",
+      "evidence_count": 4
+    },
+    {
+      "source": "parkinson",
+      "target": "motor_function",
+      "evidence_count": 4
+    },
+    {
+      "source": "biomarkers",
+      "target": "alzheimer",
+      "evidence_count": 4
+    },
+    {
+      "source": "treatment",
+      "target": "alzheimer",
+      "evidence_count": 4
+    },
+    {
+      "source": "alzheimer",
+      "target": "cognitive_decline",
+      "evidence_count": 3
+    },
+    {
+      "source": "cognitive_decline",
+      "target": "alzheimer",
+      "evidence_count": 3
+    },
+    {
+      "source": "hippocampus",
+      "target": "hippocampal_degeneration",
+      "evidence_count": 3
+    }
+  ]
+}

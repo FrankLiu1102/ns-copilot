@@ -1,0 +1,66 @@
+{
+  "version": "1.0",
+  "description": "Relation types for neuroscience knowledge graph",
+  "relations": {
+    "MODULATES": {
+      "description": "Source modulates/regulates the activity of target",
+      "typical_source": ["Neurotransmitter", "BrainRegion"],
+      "typical_target": ["BrainRegion", "CognitiveFunction", "Process"],
+      "examples": ["dopamine MODULATES prefrontal_cortex", "hippocampus MODULATES memory"]
+    },
+    "LOCATED_IN": {
+      "description": "Source is located in or found within target",
+      "typical_source": ["Neurotransmitter", "Molecule", "Process"],
+      "typical_target": ["BrainRegion"],
+      "examples": ["dopamine LOCATED_IN basal_ganglia"]
+    },
+    "SUPPORTS": {
+      "description": "Source supports or enables target function",
+      "typical_source": ["BrainRegion", "Process"],
+      "typical_target": ["CognitiveFunction"],
+      "examples": ["prefrontal_cortex SUPPORTS working_memory"]
+    },
+    "IMPAIRS": {
+      "description": "Source impairs or damages target",
+      "typical_source": ["Disease", "Molecule", "Process"],
+      "typical_target": ["BrainRegion", "CognitiveFunction"],
+      "examples": ["parkinson IMPAIRS motor_function", "amyloid_beta IMPAIRS memory"]
+    },
+    "MEASURED_BY": {
+      "description": "Source is measured or assessed using target method",
+      "typical_source": ["CognitiveFunction", "Process", "BrainRegion"],
+      "typical_target": ["Method"],
+      "examples": ["working_memory MEASURED_BY fmri"]
+    },
+    "CORRELATES_WITH": {
+      "description": "Source correlates with or is associated with target",
+      "typical_source": ["Process", "Molecule", "BrainRegion"],
+      "typical_target": ["CognitiveFunction", "Disease", "Process"],
+      "examples": ["neural_oscillations CORRELATES_WITH working_memory"]
+    },
+    "PROJECTS_TO": {
+      "description": "Source brain region projects axons to target region",
+      "typical_source": ["BrainRegion"],
+      "typical_target": ["BrainRegion"],
+      "examples": ["prefrontal_cortex PROJECTS_TO basal_ganglia"]
+    },
+    "CAUSES": {
+      "description": "Source causes or leads to target",
+      "typical_source": ["Molecule", "Process", "Disease"],
+      "typical_target": ["Process", "Disease"],
+      "examples": ["neurodegeneration CAUSES cognitive_decline"]
+    },
+    "TREATS": {
+      "description": "Source treatment addresses target disease/condition",
+      "typical_source": ["Method", "Other"],
+      "typical_target": ["Disease", "CognitiveFunction"],
+      "examples": ["deep_brain_stimulation TREATS parkinson"]
+    },
+    "ASSOCIATED_WITH": {
+      "description": "Source is associated with target (general association)",
+      "typical_source": ["Molecule", "Process", "Other"],
+      "typical_target": ["Disease", "CognitiveFunction"],
+      "examples": ["tau ASSOCIATED_WITH alzheimer"]
+    }
+  }
+}

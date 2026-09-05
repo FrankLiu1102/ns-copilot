@@ -1,0 +1,41 @@
+# Host-side dependencies for running NS-Copilot pipeline
+# (Heavy ML deps like torch/mne/flash-attn are inside Docker only)
+
+# LLM clients
+openai>=1.0
+anthropic>=0.3
+
+# Data handling
+numpy>=1.20
+scipy>=1.10
+pandas>=2.0
+h5py>=3.8
+pyarrow>=10.0
+pyyaml>=5.4
+mat73
+
+# Schema / validation
+pydantic>=2.0
+jsonschema>=4.0
+tqdm
+
+# NWB support (dataset loading on host)
+pynwb
+
+# Visualization
+matplotlib>=3.5
+seaborn>=0.12
+
+# Machine learning (host-side fallback)
+scikit-learn>=1.0
+xgboost>=1.5
+
+# Web interface
+gradio>=4.0,<7.0
+gradio-client>=1.0
+
+# Graph knowledge base
+networkx>=3.0
+
+# Dataset download
+openneuro-py

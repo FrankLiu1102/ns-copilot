@@ -1,0 +1,100 @@
+# =====================
+# Python
+# =====================
+__pycache__/
+**/__pycache__/
+*.pyc
+.env
+
+# =====================
+# Data (never commit)
+# =====================
+dataset/*
+!dataset/Working_Memory/
+dataset/Working_Memory/*
+!dataset/Working_Memory/dandi_000006/
+*.mat
+*.h5
+*.npy
+
+# =====================
+# Foundation Models (large files)
+# =====================
+models/
+!core/models/
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+
+# =====================
+# Outputs / logs
+# =====================
+outputs/*
+!outputs/.gitkeep
+artifacts/
+logs/
+
+# =====================
+# Knowledge base index (derived)
+# =====================
+knowledge_base/index/*.sqlite
+knowledge_base/index/*.db
+knowledge_base/index/*.wal
+knowledge_base/index/*.shm
+
+# =====================
+# Graph KB cache files
+# =====================
+knowledge_base/graph/__pycache__/
+knowledge_base/graph/extraction_cache.json
+
+# =====================
+# Archives (do not commit)
+# =====================
+*.tar.gz
+*.zip
+
+# =====================
+# Legacy files (local backup)
+legacy/
+
+# Local-only docs, scripts, and test files
+# =====================
+CHANGELOG.md
+DIRECTORY_STRUCTURE.md
+INSTALLATION.md
+DA_flowchart*
+To_do.md
+rebuttal.md
+test_ndt3_*.py
+/__init__.py
+docs/
+framework/
+results/
+examples/
+utils/
+scripts/
+core/models/*.md
+core/main.py
+core/dataloader.py
+core/dataset_detector.py
+core/analysis_agent.py
+core/execution_agent.py
+core/reasoning_agent.py
+core/tools_registry.py
+tests/
+knowledge_base/papers/working_memory/AUDIT_*
+knowledge_base/papers/working_memory/CHANGELOG_*
+knowledge_base/papers/working_memory/CURRENT_VERSION.txt
+knowledge_base/**/README.md
+
+# =====================
+# OS
+# =====================
+.DS_Store
+# Python package metadata (auto-generated)
+*.egg-info/
+*.egg
+dist/
+build/

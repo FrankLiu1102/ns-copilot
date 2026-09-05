@@ -1,0 +1,136 @@
+{
+  "total_edges": 62,
+  "edges_by_relation": {
+    "MEASURED_BY": 9,
+    "SUPPORTS": 6,
+    "CORRELATES_WITH": 7,
+    "MODULATES": 2,
+    "CAUSES": 8,
+    "IMPAIRS": 8,
+    "LOCATED_IN": 3,
+    "ASSOCIATED_WITH": 16,
+    "TREATS": 3
+  },
+  "top_edges": [
+    {
+      "source": "tau",
+      "relation": "ASSOCIATED_WITH",
+      "target": "alzheimer",
+      "evidence_count": 20
+    },
+    {
+      "source": "amyloid_beta",
+      "relation": "ASSOCIATED_WITH",
+      "target": "alzheimer",
+      "evidence_count": 16
+    },
+    {
+      "source": "biomarkers",
+      "relation": "ASSOCIATED_WITH",
+      "target": "alzheimer",
+      "evidence_count": 7
+    },
+    {
+      "source": "prefrontal_cortex",
+      "relation": "SUPPORTS",
+      "target": "working_memory",
+      "evidence_count": 5
+    },
+    {
+      "source": "working_memory",
+      "relation": "MEASURED_BY",
+      "target": "fmri",
+      "evidence_count": 4
+    },
+    {
+      "source": "parkinson",
+      "relation": "IMPAIRS",
+      "target": "motor_function",
+      "evidence_count": 4
+    },
+    {
+      "source": "biomarkers",
+      "relation": "MEASURED_BY",
+      "target": "alzheimer",
+      "evidence_count": 4
+    },
+    {
+      "source": "treatment",
+      "relation": "TREATS",
+      "target": "alzheimer",
+      "evidence_count": 4
+    },
+    {
+      "source": "parietal_cortex",
+      "relation": "SUPPORTS",
+      "target": "working_memory",
+      "evidence_count": 3
+    },
+    {
+      "source": "neurodegeneration",
+      "relation": "CAUSES",
+      "target": "cognitive_decline",
+      "evidence_count": 3
+    },
+    {
+      "source": "hippocampus",
+      "relation": "LOCATED_IN",
+      "target": "hippocampal_degeneration",
+      "evidence_count": 3
+    },
+    {
+      "source": "alzheimer",
+      "relation": "CAUSES",
+      "target": "cognitive_decline",
+      "evidence_count": 3
+    },
+    {
+      "source": "cognitive_decline",
+      "relation": "ASSOCIATED_WITH",
+      "target": "alzheimer",
+      "evidence_count": 3
+    },
+    {
+      "source": "neurodegeneration",
+      "relation": "ASSOCIATED_WITH",
+      "target": "alzheimer",
+      "evidence_count": 2
+    },
+    {
+      "source": "amyloid_beta",
+      "relation": "CAUSES",
+      "target": "cognitive_decline",
+      "evidence_count": 2
+    },
+    {
+      "source": "treatment",
+      "relation": "TREATS",
+      "target": "cognitive_decline",
+      "evidence_count": 2
+    },
+    {
+      "source": "tau",
+      "relation": "MEASURED_BY",
+      "target": "biomarkers",
+      "evidence_count": 2
+    },
+    {
+      "source": "genetics",
+      "relation": "ASSOCIATED_WITH",
+      "target": "alzheimer",
+      "evidence_count": 2
+    },
+    {
+      "source": "amyloid_beta",
+      "relation": "ASSOCIATED_WITH",
+      "target": "cognitive_decline",
+      "evidence_count": 2
+    },
+    {
+      "source": "tau",
+      "relation": "ASSOCIATED_WITH",
+      "target": "biomarkers",
+      "evidence_count": 2
+    }
+  ]
+}

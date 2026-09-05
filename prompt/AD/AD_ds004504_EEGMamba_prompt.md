@@ -1,0 +1,1 @@
+Classify subjects into AD (Alzheimer's Disease), FTD (Frontotemporal Dementia), and Healthy groups using the uploaded EEG dataset. You MUST use the EEGMamba pretrained foundation model (decode_with_eegmamba) for EEG feature extraction. Report accuracy, balanced accuracy, macro-averaged F1 score, macro-averaged AUROC, per-class recall, and confusion matrix.

@@ -1,0 +1,128 @@
+[
+  {
+    "task": "multiclass_classification",
+    "modality": "eeg",
+    "model": "decode_with_brainomni",
+    "stage": "initial",
+    "metric": {
+      "name": "macro_f1"
+    },
+    "strategy": {
+      "features": "decode_with_brainomni frozen (4096-dim)",
+      "classifier": "LogisticRegression (inferred)",
+      "cv": "cross_validation (inferred)"
+    }
+  },
+  {
+    "task": "multiclass_classification",
+    "modality": "eeg",
+    "model": "vanilla",
+    "stage": "initial",
+    "metric": {
+      "name": "macro_f1"
+    },
+    "strategy": {
+      "features": "spectral/bandpower",
+      "classifier": "LogisticRegression (inferred)",
+      "cv": "cross_validation (inferred)"
+    }
+  },
+  {
+    "task": "multiclass_classification",
+    "modality": "eeg",
+    "model": "decode_with_labram",
+    "stage": "initial",
+    "metric": {
+      "name": "macro_f1"
+    },
+    "strategy": {
+      "features": "decode_with_labram frozen (200-dim)",
+      "classifier": "LogisticRegression (inferred)",
+      "cv": "cross_validation (inferred)"
+    }
+  },
+  {
+    "task": "binary_classification",
+    "modality": "eeg",
+    "model": "vanilla",
+    "stage": "initial",
+    "metric": {
+      "name": "balanced_accuracy"
+    },
+    "strategy": {
+      "features": "spectral/bandpower",
+      "classifier": "LogisticRegression (inferred)",
+      "cv": "cross_validation (inferred)"
+    }
+  },
+  {
+    "task": "binary_classification",
+    "modality": "eeg",
+    "model": "decode_with_eegpt",
+    "stage": "initial",
+    "metric": {
+      "name": "balanced_accuracy"
+    },
+    "strategy": {
+      "features": "decode_with_eegpt frozen (2048-dim)",
+      "classifier": "LogisticRegression (inferred)",
+      "cv": "cross_validation (inferred)"
+    }
+  },
+  {
+    "task": "binary_classification",
+    "modality": "eeg",
+    "model": "decode_with_brainomni",
+    "stage": "initial",
+    "metric": {
+      "name": "balanced_accuracy"
+    },
+    "strategy": {
+      "features": "decode_with_brainomni frozen (4096-dim)",
+      "classifier": "LogisticRegression (inferred)",
+      "cv": "cross_validation (inferred)"
+    }
+  },
+  {
+    "task": "binary_classification",
+    "modality": "spike",
+    "model": "decode_with_poyo",
+    "stage": "initial",
+    "metric": {
+      "name": "balanced_accuracy"
+    },
+    "strategy": {
+      "features": "decode_with_poyo frozen features",
+      "classifier": "unknown",
+      "cv": "unknown"
+    }
+  },
+  {
+    "task": "binary_classification",
+    "modality": "spike",
+    "model": "vanilla",
+    "stage": "retry_1",
+    "metric": {
+      "name": "balanced_accuracy"
+    },
+    "strategy": {
+      "features": "spectral/bandpower",
+      "classifier": "LogisticRegression (inferred)",
+      "cv": "cross_validation (inferred)"
+    }
+  },
+  {
+    "task": "binary_classification",
+    "modality": "spike",
+    "model": "decode_with_mtm",
+    "stage": "initial",
+    "metric": {
+      "name": "balanced_accuracy"
+    },
+    "strategy": {
+      "features": "decode_with_mtm frozen features",
+      "classifier": "unknown",
+      "cv": "unknown"
+    }
+  }
+]

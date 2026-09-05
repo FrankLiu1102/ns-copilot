@@ -1,0 +1,61 @@
+version: '3.8'
+
+services:
+  neuro-copilot-web:
+    build: .
+    container_name: neuro-copilot-web
+    # Run as host user to avoid root-owned output files
+    # Uses HOST_UID/HOST_GID from .env (set via: echo "HOST_UID=$(id -u)\nHOST_GID=$(id -g)" >> .env)
+    user: "${HOST_UID:-1000}:${HOST_GID:-20}"
+    # Use host network mode to access localhost:11434 (Ollama)
+    network_mode: host
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      # Set via host env or .env file; or configure in web UI after startup
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - HF_TOKEN=${HF_TOKEN}
+      - USE_GPT4_FOR_NO_DATASET=true
+      - HOST=0.0.0.0
+      - PORT=8001
+      - KB_PATH=/app/knowledge_base/index/kb.sqlite
+      # Controller mode: off / auto / force
+      - CONTROLLER_MODE=${CONTROLLER_MODE:-force}
+      - CODEX_BASELINE_MODEL=${CODEX_BASELINE_MODEL:-gpt-5.2-codex}
+      - FORCE_IMPROVEMENT_COUNT=${FORCE_IMPROVEMENT_COUNT:-2}
+      - AUTO_MAX_RETRIES=${AUTO_MAX_RETRIES:-2}
+      # Optional: replaces the Codex baseline as the early-stopping threshold
+      - AUTO_TARGET_VALUE=${AUTO_TARGET_VALUE:-}
+      # Use localhost since we're in host network mode
+      - OLLAMA_BASE_URL=http://localhost:11434
+      # GPU environment variables
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+      # Default dataset for testing (container path, mounted via volumes)
+      - DEFAULT_DATASET_PATH=${DEFAULT_DATASET_PATH:-}
+      # HOME for config persistence (container user has no /etc/passwd entry)
+      - HOME=/app/outputs
+      - MPLCONFIGDIR=/tmp/matplotlib
+    volumes:
+      # Mount application code (development mode - code changes take effect immediately)
+      - ./core:/app/core
+      - ./web_app.py:/app/web_app.py
+      - ./run_batch.py:/app/run_batch.py
+      - ./prompt:/app/prompt
+      # Mount knowledge base (read-only)
+      - ./knowledge_base:/app/knowledge_base:ro
+      # Optional: Mount outputs directory for saving results
+      - ./outputs:/app/outputs
+      # Mount foundation model code and checkpoints (set MODELS_DIR in .env or use default ./models)
+      - ${MODELS_DIR:-./models}/ndt3:/app/ndt3:ro
+      - ${MODELS_DIR:-./models}/mtm:/app/mtm:ro
+      - ${MODELS_DIR:-./models}/poyo:/app/poyo:ro
+      - ${MODELS_DIR:-./models}/labram:/app/labram:ro
+      - ${MODELS_DIR:-./models}/cbramod:/app/cbramod:ro
+      - ${MODELS_DIR:-./models}/eegpt:/app/eegpt:ro
+      - ${MODELS_DIR:-./models}/eegmamba:/app/eegmamba:ro
+      - ${MODELS_DIR:-./models}/brainomni:/app/brainomni:ro
+      # Mount dataset directory for local testing (avoids re-uploading large files)
+      - ./dataset:/app/dataset
+    restart: unless-stopped
+    # Enable GPU access for foundation models (using legacy runtime syntax)
+    runtime: nvidia

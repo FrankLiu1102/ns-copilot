@@ -1,0 +1,58 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Data files (too large for Docker image)
+dataset/
+*.mat
+*.h5
+*.npy
+*.npz
+
+# Outputs and logs
+outputs/
+artifacts/
+logs/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+
+# Documentation (not needed in container)
+docs/
+*.md
+!README.md
+
+# Tests (optional, keep if you want to run tests in container)
+tests/
+
+# Scripts (optional)
+scripts/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
