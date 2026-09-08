@@ -12,6 +12,15 @@
   <a href="https://arxiv.org/abs/2609.01971"><img src="https://img.shields.io/badge/arXiv-2609.01971-607d8b" alt="arXiv"></a>
 </p>
 
+<p align="center">
+  <img src="assets/figure1.png"
+       alt="NS-Copilot system overview: Planner, Coder, Controller and Interpreter agents operating in a closed loop around a sandboxed executor">
+</p>
+
+<p align="center">
+  <em>System overview (Figure 1 of the <a href="https://arxiv.org/abs/2609.01971">paper</a>).</em>
+</p>
+
 NS-Copilot is a multi-agent system that autonomously performs end-to-end neuroscience data analysis. Given raw neural data and a natural-language task description, it orchestrates four LLM agents (Planner, Coder, Controller, Interpreter) to select pre-trained models, generate analysis code, iteratively optimize results, and produce comprehensive reports, all within a sandboxed Docker environment.
 
 ## Features
