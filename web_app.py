@@ -264,7 +264,7 @@ def create_config_tab():
     """Create the Configuration tab UI with sub-tabs: General, QA Settings, DA Settings"""
     
     # Model choices for dropdowns
-    openai_models = ["gpt-5.1", "gpt-4o", "gpt-4o-mini", "gpt-4-turbo", "gpt-3.5-turbo", "o1-preview", "o1-mini"]
+    openai_models = ["gpt-5.2", "gpt-5.1", "gpt-4o", "gpt-4o-mini", "gpt-4-turbo", "gpt-3.5-turbo", "o1-preview", "o1-mini"]
     anthropic_models = ["claude-sonnet-4-20250514", "claude-opus-4-20250514", "claude-3-5-sonnet-latest"]
     ollama_models = ["llama3.1:8b", "llama3.1:70b", "mistral:7b", "mixtral:8x7b", "qwen2:7b"]
     all_models = openai_models + anthropic_models + ollama_models
@@ -462,14 +462,14 @@ def create_config_tab():
                     da_planner_model = gr.Dropdown(
                         label="Planner Agent LLM Backbone",
                         choices=all_models,
-                        value="gpt-5.1",
+                        value="gpt-5.2",
                         info="Plans analysis steps from user request",
                         allow_custom_value=True
                     )
                     da_code_gen_model = gr.Dropdown(
                         label="Code Generator Agent LLM Backbone",
                         choices=all_models,
-                        value="gpt-5.1",
+                        value="gpt-5.2",
                         info="Generates Python code for each step",
                         allow_custom_value=True
                     )
@@ -478,21 +478,21 @@ def create_config_tab():
                     da_controller_diag_model = gr.Dropdown(
                         label="Controller (Diagnosis) Agent LLM Backbone",
                         choices=all_models,
-                        value="gpt-5.1",
+                        value="gpt-5.2",
                         info="Diagnoses execution results and identifies anomalies",
                         allow_custom_value=True
                     )
                     da_controller_refine_model = gr.Dropdown(
                         label="Controller (Prompt Refine) Agent LLM Backbone",
                         choices=all_models,
-                        value="gpt-5.1",
+                        value="gpt-5.2",
                         info="Refines prompt with diagnosis recommendations for retry",
                         allow_custom_value=True
                     )
                     da_analysis_model = gr.Dropdown(
                         label="Analysis Agent LLM Backbone",
                         choices=all_models,
-                        value="gpt-5.1",
+                        value="gpt-5.2",
                         info="Interprets results and generates reports",
                         allow_custom_value=True
                     )

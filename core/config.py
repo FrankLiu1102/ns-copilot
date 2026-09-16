@@ -31,7 +31,7 @@ OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
 # Model Configuration
 # =============================================================================
 # Default models based on backend:
-#   - openai: gpt-4o (general), gpt-5.1 (advanced reasoning)
+#   - openai: gpt-4o (general), gpt-5.2 (advanced reasoning)
 #   - ollama: llama3.1:8b, llama3.1:70b
 #
 # These can be overridden via environment variables.
@@ -65,14 +65,14 @@ def _get_advanced_model() -> str:
 #
 #   Component                    Env Variable                     Default (OpenAI)
 #   ─────────                    ────────────                     ────────────────
-#   Router                       ROUTER_MODEL                     gpt-5.1
-#   Task Agent (QA/DA)           TASK_AGENT_MODEL                 gpt-5.1
-#   Planner                      PLANNER_MODEL                    gpt-5.1
-#   Code Generator               CODE_GENERATOR_MODEL             gpt-5.1
-#   Controller (legacy/QA)       CONTROLLER_MODEL                 gpt-5.1
-#   Controller (Diagnosis)       CONTROLLER_DIAGNOSIS_MODEL       gpt-5.1
-#   Controller (Prompt Refine)   CONTROLLER_PROMPT_REFINE_MODEL   gpt-5.1
-#   Analysis Agent               ANALYSIS_MODEL                   gpt-5.1
+#   Router                       ROUTER_MODEL                     gpt-5.2
+#   Task Agent (QA/DA)           TASK_AGENT_MODEL                 gpt-5.2
+#   Planner                      PLANNER_MODEL                    gpt-5.2
+#   Code Generator               CODE_GENERATOR_MODEL             gpt-5.2
+#   Controller (legacy/QA)       CONTROLLER_MODEL                 gpt-5.2
+#   Controller (Diagnosis)       CONTROLLER_DIAGNOSIS_MODEL       gpt-5.2
+#   Controller (Prompt Refine)   CONTROLLER_PROMPT_REFINE_MODEL   gpt-5.2
+#   Analysis Agent               ANALYSIS_MODEL                   gpt-5.2
 # ---------------------------------------------------------------------------
 ROUTER_MODEL = os.getenv("ROUTER_MODEL", _get_advanced_model())
 TASK_AGENT_MODEL = os.getenv("TASK_AGENT_MODEL", _get_advanced_model())

@@ -65,15 +65,15 @@ class PipelineConfig:
 @dataclass
 class DAConfig:
     """Data Analysis pipeline configuration"""
-    planner_model: str = "gpt-5.1"
+    planner_model: str = "gpt-5.2"
     planner_temperature: float = 0.2
-    code_generator_model: str = "gpt-5.1"
+    code_generator_model: str = "gpt-5.2"
     code_generator_temperature: float = 0.2
-    controller_diagnosis_model: str = "gpt-5.1"
+    controller_diagnosis_model: str = "gpt-5.2"
     controller_diagnosis_temperature: float = 0.1
-    controller_prompt_refine_model: str = "gpt-5.1"
+    controller_prompt_refine_model: str = "gpt-5.2"
     controller_prompt_refine_temperature: float = 0.2
-    analysis_model: str = "gpt-5.1"
+    analysis_model: str = "gpt-5.2"
     analysis_temperature: float = 0.3
     max_steps: int = 50
     seed: int = 0
